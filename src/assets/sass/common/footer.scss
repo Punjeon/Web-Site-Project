@@ -1,0 +1,102 @@
+
+.footer {
+    margin-bottom: 35px;
+    &__container {
+        margin-top: 130px;
+        border-top: 1px solid $grey;
+
+
+        
+        @media (max-width: $mobile) {
+
+            margin-top:20px;
+            text-align: center;
+        }
+
+    }
+
+    &__boxes {
+        margin-top: 52px;
+        display: flex;
+        justify-content: space-between;
+
+        
+        @media (max-width: $mobile) {
+
+            flex-direction: column;
+            gap:30px;
+            
+        }
+
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 15px;
+
+        
+        @media (max-width: $mobile) {
+
+           justify-content: center;
+           margin-bottom: 30px;
+        }
+
+    }
+
+    &__a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: $grey;
+    }
+
+    &__a:hover {
+        color:white;
+    }
+
+    &__p {
+        max-width: 475px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    
+    }
+
+    &__box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    svg {
+        color: white;
+    }
+
+    svg:hover {
+        color: $grey;
+        transition: all .3s ease;
+
+
+    }
+
+    &__copyright {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: $grey;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:50px;
+    }
+
+  
+}

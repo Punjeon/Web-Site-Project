@@ -1,0 +1,38 @@
+//Global Styles
+
+@import './global/resets.scss';
+
+@import './global/global.scss';
+
+//Global Styles End
+
+
+//Variables
+
+@import './variables/_fonts.scss';
+@import './variables/_color.scss';
+@import './variables/_media.scss';
+
+//Variables End
+
+
+//Header 
+
+@import './common/header.scss';
+
+//Header End
+
+
+//Pages
+
+@import './pages/home.scss';
+@import './pages/works.scss';
+@import './pages/aboutme.scss';
+@import './pages/contacts.scss';
+
+//PagesEnd
+
+
+//Footer
+@import './common/footer.scss';
+//Footer End
