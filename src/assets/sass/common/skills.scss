@@ -1,0 +1,68 @@
+.section-skills {
+
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        margin-top: 50px;
+
+        @media (max-width: $mobile) {
+
+            flex-direction: column-reverse;
+
+        }
+    }
+
+    &__img {
+        width: 40%;
+        max-height: 100%;
+
+        @media (max-width: $mobile) {
+
+            width: 100%;
+        }
+    }
+
+    &__skills {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 105px;
+        justify-content: space-between;
+
+      
+
+
+    }
+
+    &__h4 {
+        border: 1px solid $grey;
+        padding: 8px;
+
+    }
+
+    &__p {
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: white;
+
+        border-left: 1px solid $grey;
+        border-right: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+        padding: 8px;
+
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: $grey;
+    }
+}

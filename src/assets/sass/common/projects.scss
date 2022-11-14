@@ -1,0 +1,146 @@
+.section-projects {
+
+    display: flex;
+    flex-direction: column;
+
+    &__titlebox {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__titlebox-a {
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    &__titlebox-a:hover {
+        color: $grey;
+    }
+
+    &__projects {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        flex-wrap: wrap;
+        gap: 15px;
+
+
+
+    }
+
+    &__projects-item {
+        border: 1px solid $grey;
+        max-width: 350px;
+
+    }
+
+    &__img {
+        max-width: 100%;
+
+
+    }
+
+    &__h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+
+        color: white;
+
+
+        border-top: 1px solid $grey;
+
+        padding: 10px 15px;
+    }
+
+    &__p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: $grey;
+        padding: 10px 15px;
+    }
+
+    &__buttons {
+        padding: 5px 15px;
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0px;
+
+    }
+
+    &__button-live {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px 16px;
+        gap: 10px;
+        background: $background;
+
+        width: 112px;
+        height: 37px;
+
+        border: 1px solid $purple;
+
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+
+
+        color: white;
+
+    }
+
+    &__button-live:hover {
+        color: $purple;
+
+    }
+
+    &__button-cashed {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px 16px;
+        gap: 10px;
+        background-color: $background;
+
+        width: 119px;
+        height: 37px;
+
+        border: 1px solid $grey;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: $grey;
+    }
+
+    &__button-cashed:hover {
+        color: white;
+        border: 1px solid white;
+    }
+}
