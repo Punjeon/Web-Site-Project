@@ -9,6 +9,8 @@
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 
+    <link rel="icon" type="image/svg" href="./img/favicon.svg" />
+
 
 </head>
 
@@ -112,7 +114,42 @@
                             <span class="header__box1-words">front-end developer</span>
                         </h1>
                         <p class="header__box1-p">He crafts responsive websites where technologies meet creativity</p>
-                        <a href="#"><button class="header__button">Contact me !!</button></a>
+
+
+                        <div class="popup-link">
+                            <a href="#popup"><button class="header__button">Contact me !!</button></a>
+
+                        </div>
+
+
+                        <div id="popup" class="popup-container popup-style">
+                            <div class="popup-content">
+                                <a href="#" class="close">&times;</a>
+                                <h3><span class="header__box1-words">Contact</span> me</h3>
+
+                                <div class="form__fields">
+                                    <span class="form__tilte">Name:</span>
+                                    <input class="form__input" type="text" placeholder="Vladislav Vladimirov" required>
+                                </div>
+        
+                                <div class="form__fields">
+                                    <span class="form__tilte">Email:</span>
+                                    <input class="form__input" type="email" placeholder="email@gmail.com" required>
+                                </div>
+        
+                                <div class="form__fields">
+                                    <span class="form__tilte">Phone:</span>
+                                    <input class="form__input" type="tel" placeholder="+380 000 00 00" required>
+                                </div>
+
+                                <div class="form__fields">
+                                    <span class="form__tilte">Enter your request:</span>
+                                    <input class="form__input" type="textarea" placeholder="" required>
+                                </div>
+                                <input type="submit" value="Submit" class="submit">
+                            </div>
+                        </div>
+
                     </div>
                     <div class="header__box2">
                         <img src="./img/header.png" width="" class="header__img" alt="header">
@@ -250,12 +287,13 @@
                                 presence online. I always strive to learn about the newest technologies and
                                 frameworks.
                             </p>
-                            <button onClick='location.href="./pages/aboutme.html   "' class="section-aboutme__button">Read more -></button>
+                            <button onClick='location.href="./pages/aboutme.html   "'
+                                class="section-aboutme__button">Read more -></button>
 
                         </div>
 
                         <div class="section-aboutme__box2">
-                            <img src="./img/aboutme.png"  alt="aboutme" width="200" class="section-aboutme__img">
+                            <img src="./img/aboutme.png" alt="aboutme" width="200" class="section-aboutme__img">
                         </div>
                     </div>
                 </section>
@@ -276,7 +314,7 @@
 
                         <div class="section-contacts__box2">
                             <h4 class="section-contacts__h4">Message me here</h4>
-                            
+
                             <a href="#" class="section-contacts__discord"><svg width="32" height="32"
                                     viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path
